@@ -2,6 +2,14 @@
 export default {
   content: ["./src/**/*.jsx", "./src/components/*.jsx", "./index.html"],
   theme: {
+    screens: {
+      'xs': '32rem',
+      'sm': '40rem',
+      'md': '48rem',
+      'lg': '64rem',
+      'xl': '80rem',
+      '2xl': '96rem'
+    },
     colors: {
       white: "#FFFFFF",
       blue: {
@@ -19,6 +27,12 @@ export default {
     extend: {
       backgroundImage: {
         hex: "url(./src/assets/hex.png)",
+      },
+      transitionProperty: {
+        'height': 'height' 
+      },
+      spacing: {
+        navh: 'calc(2.5rem + 1rlh)'
       }
     },
   },

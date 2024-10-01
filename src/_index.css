@@ -23,3 +23,8 @@
 nav > span {
   margin: 12px 12px;
 }
+
+body {
+  margin-top: theme('spacing.navh');
+  scroll-margin-top: theme('spacing.navh')
+}

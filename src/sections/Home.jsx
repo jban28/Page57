@@ -9,7 +9,7 @@ function Home ({sectionRef}) {
                     <img className="justify-self-end self-center px-8" src={Logo}></img>
                 </div>
                 <div>
-                <h1 className="text-center md:text-left text-5xl text-yellow font-bold font-helvetica mx-8">Workforce solutions tailored to your business</h1>
+                <h1 className="text-center md:text-left text-5xl text-white font-bold font-helvetica mx-8">Workforce solutions tailored to your business</h1>
                 </div>
             </div>
 

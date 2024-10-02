@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -560,14 +560,19 @@ video {
   grid-column: span 1 / span 1;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-16{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mx-16{
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mb-3{
@@ -580,10 +585,6 @@ video {
 
 .ml-5{
   margin-left: 1.25rem;
-}
-
-.mt-16{
-  margin-top: 4rem;
 }
 
 .mt-3{
@@ -606,6 +607,14 @@ video {
   display: flex;
 }
 
+.flow-root{
+  display: flow-root;
+}
+
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -622,6 +631,10 @@ video {
   height: 100%;
 }
 
+.max-h-20{
+  max-height: 5rem;
+}
+
 .max-h-max{
   max-height: -moz-max-content;
   max-height: max-content;
@@ -629,6 +642,11 @@ video {
 
 .w-52{
   width: 13rem;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full{
@@ -669,6 +687,14 @@ video {
        break-after: column;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -685,12 +711,16 @@ video {
   align-items: center;
 }
 
-.gap-2{
-  gap: 0.5rem;
-}
-
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-16{
+  gap: 4rem;
 }
 
 .self-center{
@@ -721,24 +751,43 @@ video {
   border-width: 4px;
 }
 
-.border-yellow{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 194 17 / var(--tw-border-opacity));
+.border-b-4{
+  border-bottom-width: 4px;
 }
 
-.bg-blue{
+.border-accent{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 196 17 / var(--tw-border-opacity));
+}
+
+.border-primary-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(6 66 115 / var(--tw-border-opacity));
+}
+
+.bg-accent{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 196 17 / var(--tw-bg-opacity));
+}
+
+.bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(9 91 167 / var(--tw-bg-opacity));
+}
+
+.bg-primary-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 241 255 / var(--tw-bg-opacity));
+}
+
+.bg-primary-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 44 77 / var(--tw-bg-opacity));
 }
 
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-yellow{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 194 17 / var(--tw-bg-opacity));
 }
 
 .bg-hex{
@@ -765,6 +814,11 @@ video {
   padding: 2rem;
 }
 
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -788,10 +842,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pt-20{
-  padding-top: 5rem;
 }
 
 .text-left{
@@ -841,8 +891,18 @@ video {
   line-height: 1.75rem;
 }
 
+.text-9xl{
+  font-size: 8rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.text-primary-100{
+  --tw-text-opacity: 1;
+  color: rgb(227 241 255 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -850,9 +910,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-yellow{
+.text-accent{
   --tw-text-opacity: 1;
-  color: rgb(255 194 17 / var(--tw-text-opacity));
+  color: rgb(255 196 17 / var(--tw-text-opacity));
 }
 
 .transition-height{
@@ -890,14 +950,14 @@ body {
   scroll-margin-top: calc(2.5rem + 1rlh)
 }
 
-.hover\:bg-blue-dark:hover{
+.hover\:bg-accent-700:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(7 76 136 / var(--tw-bg-opacity));
+  background-color: rgb(173 130 0 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-yellow-dark:hover{
+.hover\:bg-primary-700:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(222 170 18 / var(--tw-bg-opacity));
+  background-color: rgb(4 44 77 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 32rem){
@@ -915,17 +975,25 @@ body {
     width: 83.333333%;
   }
 
+  .md\:max-w-screen-md{
+    max-width: 48rem;
+  }
+
   .md\:columns-2{
     -moz-columns: 2;
          columns: 2;
   }
 
-  .md\:grid-cols-header{
-    grid-template-columns: 30% 1fr;
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:justify-items-center{
     justify-items: center;
+  }
+
+  .md\:gap-16{
+    gap: 4rem;
   }
 
   .md\:text-left{
@@ -948,6 +1016,10 @@ body {
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:max-w-screen-lg{
+    max-width: 64rem;
   }
 
   .lg\:grid-cols-2{

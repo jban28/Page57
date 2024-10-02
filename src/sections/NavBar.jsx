@@ -27,7 +27,7 @@ function NavBar ({sectionRefs}) {
     }
  
     return (
-        <nav className={`w-full p-2 text-white bg-blue flex flex-col-reverse xl:flex-row fixed top-0 z-10`}> 
+        <nav className={`w-full p-2 text-white bg-primary flex flex-col-reverse xl:flex-row fixed top-0 z-10 border-b-4 border-primary-600`}> 
             <nav 
                 ref={navExpand} 
                 style={{ height: height + 'px' }} 

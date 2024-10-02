@@ -2,7 +2,7 @@ function QuoteBox ({ children, name, position }) {
     return (
         <div className="flex items-center h-full bg-hex bg-center p-8">
             <div className="md:w-10/12 mx-auto bg-white p-8 rounded-lg">
-                <div className="border-4 rounded-lg border-yellow p-8">
+                <div className="border-4 rounded-lg border-accent p-8">
                     <p className="text-left text-2xl">
                         <em>"{children}"</em><br/>
                     </p>

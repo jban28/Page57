@@ -1,6 +1,6 @@
 function WorkHistory () {
     return (
-        <section className="md:w-10/12 lg:w-8/12 mx-auto p-8">
+        <section className="md:w-10/12 lg:w-8/12 mx-auto p-8 bg-primary-100 text-white">
             <p className="mb-3">
             My HR career includes nearly twenty years working in a variety of HR roles with not for
             profit organisations. After working in social services and education departments at Kent

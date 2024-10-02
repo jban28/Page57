@@ -560,28 +560,14 @@ video {
   grid-column: span 1 / span 1;
 }
 
-.m-8{
-  margin: 2rem;
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .mb-3{
@@ -604,6 +590,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .block{
   display: block;
 }
@@ -616,12 +606,12 @@ video {
   display: flex;
 }
 
-.grid{
-  display: grid;
-}
-
 .hidden{
   display: none;
+}
+
+.aspect-square{
+  aspect-ratio: 1 / 1;
 }
 
 .h-20{
@@ -645,8 +635,8 @@ video {
   width: 100%;
 }
 
-.max-w-2xl{
-  max-width: 42rem;
+.w-3\/5{
+  width: 60%;
 }
 
 .grow{
@@ -673,11 +663,6 @@ video {
   list-style-type: disc;
 }
 
-.columns-2{
-  -moz-columns: 2;
-       columns: 2;
-}
-
 .break-inside-avoid-column{
   -moz-column-break-inside: avoid;
        break-inside: avoid-column;
@@ -686,10 +671,6 @@ video {
 .break-after-column{
   -moz-column-break-after: column;
        break-after: column;
-}
-
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -708,12 +689,16 @@ video {
   align-items: center;
 }
 
-.justify-items-center{
-  justify-items: center;
-}
-
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.self-center{
+  align-self: center;
 }
 
 .justify-self-end{
@@ -738,6 +723,10 @@ video {
 
 .border-4{
   border-width: 4px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
 }
 
 .border-yellow{
@@ -809,6 +798,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pt-20{
+  padding-top: 5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -846,19 +839,14 @@ video {
   line-height: 1.25rem;
 }
 
-.text-9xl{
-  font-size: 8rem;
-  line-height: 1;
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -944,8 +932,8 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:items-center{
-    align-items: center;
+  .md\:grid-cols-header{
+    grid-template-columns: 30% 1fr;
   }
 
   .md\:justify-items-center{

@@ -33,6 +33,9 @@ export default {
       },
       spacing: {
         navh: 'calc(2.5rem + 1rlh)'
+      },
+      gridTemplateColumns: {
+        'header': '30% 1fr'
       }
     },
   },

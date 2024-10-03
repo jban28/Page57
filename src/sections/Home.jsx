@@ -1,11 +1,11 @@
 import Card from "../components/Card.jsx"
-import Logo from "../assets/logo.png" 
+import Logo from "../assets/page57-logo-alt.png" 
 
 function Home ({sectionRef}) {
     return (
         <section className="bg-primary">
         <div ref={sectionRef} className="flow-root scroll-mt-navh bg-primary lg:max-w-screen-lg w-fit mx-auto">
-            <h1 className="text-9xl text-left md:text-left text-xl text-accent font-helvetica my-16 px-16 font-bold">Page57</h1>
+            <img className="sm:max-w-screen-sm my-16 px-16" src={Logo} />
             <div className="md:max-w-screen-md my-16 px-16 ">
                 <h1 className="text-left text-white md:text-left text-5xl font-bold font-helvetica">Workforce solutions tailored to your business</h1>
             </div>

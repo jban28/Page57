@@ -27,7 +27,7 @@ function NavBar ({sectionRefs}) {
     }
  
     return (
-        <nav className={`w-full p-2 text-white bg-primary flex flex-col-reverse xl:flex-row fixed top-0 z-10 border-b-4 border-primary-600`}> 
+        <nav className={`w-full p-sm text-white bg-primary-700 flex flex-col-reverse xl:flex-row fixed top-0 z-10 border-b-4 border-primary-600`}> 
             <nav 
                 ref={navExpand} 
                 style={{ height: height + 'px' }} 
@@ -42,13 +42,11 @@ function NavBar ({sectionRefs}) {
             <nav className="flex flex-wrap grow xl:justify-end whitespace-nowrap">
                 <NavLink className="hidden xs:block grow-0" href="mailto:nicholas@page57.org">Email: nicholas@page57.org</NavLink>
                 <NavLink className="grow-0" href="tel:07534630712">Tel: 07534 630712</NavLink>
-                <nav className="grow p-3 text-right xl:hidden cursor-pointer" >
-                    <button
-                        tabIndex="0" 
-                        onClick={toggle}
-                    >
-                        { expanded ? '\u00D7' : '\u2261' }
-                    </button>
+                <nav className="grow p-sm text-right xl:hidden cursor-pointer"
+                    onClick={toggle} 
+                    tabIndex="0"
+                > 
+                    { expanded ? '\u00D7' : '\u2261' }
                 </nav>
             </nav> 
 

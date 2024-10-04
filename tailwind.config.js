@@ -21,7 +21,12 @@ export default {
         'height': 'height' 
       },
       spacing: {
-        navh: 'calc(2.5rem + 1rlh)'
+        navh: 'calc(66px + 1rlh)',
+        xs: '8px',
+        sm: '16px',
+        md: '32px',
+        lg: '64px',
+        xl: '128px,' 
       },
       gridTemplateColumns: {
         'header': '30% 1fr'

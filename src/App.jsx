@@ -6,6 +6,7 @@ import Clients from "./sections/Clients.jsx"
 import Qualifications from "./sections/Qualifications.jsx"
 import SectionHeader from "./components/SectionHeader.jsx"
 import QuoteBox from "./components/QuoteBox.jsx"
+import Footer from "./sections/Footer.jsx"
 import { useRef } from "react"
 
 function App() {
@@ -22,9 +23,6 @@ function App() {
 
       <SectionHeader sectionRef={sectHistory}>Work History</SectionHeader>
       <WorkHistory/>
-      <QuoteBox name="Firstname Surname" position="Position @ Company">
-        A quote from a client would look good here?
-      </QuoteBox>
 
       <SectionHeader sectionRef={sectMethod}>How I work with you</SectionHeader>
       <Method/>
@@ -32,8 +30,14 @@ function App() {
       <SectionHeader sectionRef={sectClients}>Consultancy Clients</SectionHeader>
       <Clients/>
 
+      {/* <QuoteBox name="Firstname Surname" position="Position @ Company">
+        A quote from a client would look good here?
+      </QuoteBox> */}
+
       <SectionHeader sectionRef={sectQuals}>Qualifications</SectionHeader>
       <Qualifications/>
+
+      <Footer/>
     </>
   )
 }

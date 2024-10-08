@@ -3,7 +3,7 @@ import Logo from "../assets/page57-logo-alt.png"
 
 function Home ({sectionRef}) {
     return (
-        <section className="bg-gradient-to-b from-primary from 50% to-primary-700">
+        <section className="bg-person">
             <div ref={sectionRef} className="flow-root scroll-mt-navh lg:max-w-screen-lg w-fit mx-auto">
                 <img className="sm:max-w-screen-sm my-lg px-lg" src={Logo} />
                 <div className="md:max-w-screen-md my-lg px-lg ">

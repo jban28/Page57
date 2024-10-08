@@ -7,7 +7,7 @@
     "dev": "npm-run-all --parallel dev:vite dev:tailwind",
     "dev:vite": "vite",
     "dev:tailwind": "tailwind -i ./src/_index.css -o ./src/index.css -w",
-    "build": "tailwind -o ./src/index.css && vite build",
+    "build": "tailwind -i ./src/_index.css -o ./src/index.css && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

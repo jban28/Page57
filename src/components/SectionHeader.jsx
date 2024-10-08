@@ -1,6 +1,6 @@
 function SectionHeader({children, sectionRef}) {
     return (
-        <h1 ref={sectionRef} className="py-8 text-3xl text-center font-bold bg-yellow scroll-mt-navh">{children}</h1>
+        <h1 ref={sectionRef} className="py-lg text-3xl text-center text-white font-bold bg-primary-700 scroll-mt-navh underline underline-offset-4 decoration-accent">{children}</h1>
     )
 }
 

@@ -1,7 +1,7 @@
 function WorkHistory () {
     return (
-        <section className="md:w-10/12 lg:w-8/12 mx-auto p-8">
-            <p className="mb-3">
+        <section className="md:w-10/12 lg:w-8/12 mx-auto p-md sm:p-lg text-primary-700">
+            <p className="mb-sm sm:mb-md">
             My HR career includes nearly twenty years working in a variety of HR roles with not for
             profit organisations. After working in social services and education departments at Kent
             County Council and Hammersmith &amp; Fulham Council, and a period with an HIV charity in

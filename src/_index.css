@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Playpen+Sans:wght@400;700&display=swap');
 
 @tailwind base;
-@tailwind components;
+/* @tailwind components; */
 @tailwind utilities;
 
 /* :root {
@@ -27,4 +27,20 @@ nav > span {
 body {
   margin-top: theme('spacing.navh');
   scroll-margin-top: theme('spacing.navh')
+}
+
+.bg-person {
+  background-image: linear-gradient(to bottom, theme('colors.primary.500') 20%, theme('colors.primary.700'));
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: theme('screens.lg')) {
+  .bg-person {
+    background-image: url(./assets/page57-bg-crop-hollow.png), linear-gradient(to bottom, theme('colors.primary.500') 20%, theme('colors.primary.700'));
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

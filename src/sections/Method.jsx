@@ -1,22 +1,22 @@
 function Method () {
     return (
-        <section className="md:w-10/12 lg:w-8/12 mx-auto order-last flex items-center p-8">
+        <section className="md:w-10/12 lg:w-8/12 mx-auto order-last flex items-center p-md sm:p-lg text-primary-700">
             <div>
-                <p className="mb-3">
+                <p className="mb-sm sm:mb-md">
                     My belief is that to be effective HR interventions must be designed for the particular
                     context, taking account of culture and business/service needs.
                 </p>
-                <p className="mb-3">
+                <p className="mb-sm sm:mb-md">
                     Whilst valuing my professional experience and qualifications highly, my preference is to
                     work in a friendly and relatively informal way. I like to work in partnership with clients to
                     first clarify the issues or problems at hand.
                 </p>
-                <p className="mb-3">
+                <p className="mb-sm sm:mb-md">
                     Depending on the issues we might then generate options for consideration. These can be
                     tested for your environment, taking account of your preferred working style, company
                     culture and relevant workforce data.
                 </p>
-                <p className="mb-3">
+                <p className="mb-sm sm:mb-md">
                     I'm happy to generate a range of options for you to consider, with detailed analysis of the
                     data together with recommendations. I am also comfortable with a less formal approach
                     and the degree of detail provided will depend on the issues you are keen to address.

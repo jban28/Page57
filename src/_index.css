@@ -26,7 +26,8 @@ nav > span {
 
 body {
   margin-top: theme('spacing.navh');
-  scroll-margin-top: theme('spacing.navh')
+  scroll-margin-top: theme('spacing.navh');
+  background: white;
 }
 
 .bg-person {
